@@ -1,4 +1,4 @@
-# [YOUR NAME] — UI/UX Designer Portfolio
+# Jaya Surya — UI/UX Designer Portfolio
 
 A production-ready personal portfolio for a 4th-year B.E. Computer Science Engineering student specializing in UI/UX design. Built with a minimal, editorial aesthetic inspired by premium design portfolios — monochrome palette, large typography, glass navigation, and refined motion.
 
