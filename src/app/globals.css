@@ -2,25 +2,195 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #000000;
+  --muted: #a3a3a3;
+  --muted-foreground: #737373;
+  --border: #e5e5e5;
+  --card: #ffffff;
+  --accent: #000000;
+  --accent-foreground: #ffffff;
+  --ring: #000000;
+  --radius: 1rem;
+  --glass: rgba(255, 255, 255, 0.8);
+  --glass-border: rgba(0, 0, 0, 0.05);
+  --shadow-soft: 0 8px 32px rgba(0, 0, 0, 0.06);
+  --shadow-lift: 0 24px 48px rgba(0, 0, 0, 0.1);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-card: var(--card);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-ring: var(--ring);
+  --color-glass: var(--glass);
+  --color-glass-border: var(--glass-border);
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-inter-tight);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: var(--radius);
+  --radius-lg: calc(var(--radius) + 4px);
+  --radius-xl: calc(var(--radius) + 8px);
+  --radius-2xl: calc(var(--radius) + 16px);
+  --radius-full: 9999px;
+  --shadow-soft: var(--shadow-soft);
+  --shadow-lift: var(--shadow-lift);
+  --animate-accordion-down: accordion-down 0.3s ease-out;
+  --animate-accordion-up: accordion-up 0.3s ease-out;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@keyframes accordion-down {
+  from {
+    height: 0;
   }
+  to {
+    height: var(--radix-accordion-content-height);
+  }
+}
+
+@keyframes accordion-up {
+  from {
+    height: var(--radix-accordion-content-height);
+  }
+  to {
+    height: 0;
+  }
+}
+
+* {
+  border-color: var(--border);
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: var(--foreground);
+  color: var(--background);
+}
+
+@media print {
+  header,
+  footer,
+  nav[aria-label="Main navigation"],
+  nav[aria-label="Social links"],
+  nav[aria-label="Footer navigation"] {
+    display: none !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.glass {
+  background: var(--glass);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid var(--glass-border);
+}
+
+.text-outline {
+  -webkit-text-stroke: 1.5px var(--foreground);
+  color: transparent;
+}
+
+.bg-text {
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.06em;
+  line-height: 0.85;
+  user-select: none;
+  pointer-events: none;
+}
+
+.section-padding {
+  @apply px-4 sm:px-6 lg:px-8 xl:px-12;
+}
+
+.container-wide {
+  @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 xl:px-12;
+}
+
+.container-narrow {
+  @apply mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 xl:px-12;
+}
+
+.heading-display {
+  font-family: var(--font-display), system-ui, sans-serif;
+  @apply text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold tracking-tighter leading-[0.9];
+}
+
+.heading-section {
+  font-family: var(--font-display), system-ui, sans-serif;
+  @apply text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight;
+}
+
+.heading-subsection {
+  @apply text-xl sm:text-2xl font-semibold tracking-tight;
+}
+
+.body-lg {
+  @apply text-base sm:text-lg leading-relaxed text-muted;
+}
+
+.body-sm {
+  @apply text-sm leading-relaxed text-muted;
+}
+
+.label {
+  @apply text-xs font-medium uppercase tracking-widest text-muted;
+}
+
+.focus-ring {
+  @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background;
 }

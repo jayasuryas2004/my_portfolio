@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <rect width="800" height="600" fill="#FAF5FF"/>
+  <text x="400" y="280" text-anchor="middle" fill="#0A0A0A" font-family="system-ui" font-size="72" font-weight="800" letter-spacing="-4">Type</text>
+  <text x="400" y="360" text-anchor="middle" fill="#A855F7" font-family="system-ui" font-size="72" font-weight="800" letter-spacing="-4" opacity="0.6">Lab</text>
+  <text x="400" y="560" text-anchor="middle" fill="#737373" font-family="system-ui" font-size="14">Type Lab</text>
+</svg>

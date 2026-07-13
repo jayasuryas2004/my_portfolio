@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <rect width="800" height="600" fill="#F5F3FF"/>
+  <rect x="80" y="80" width="640" height="440" rx="24" fill="white" stroke="#E5E5E5"/>
+  <rect x="120" y="120" width="200" height="360" rx="16" fill="#7C3AED" opacity="0.1"/>
+  <rect x="140" y="150" width="160" height="10" rx="5" fill="#7C3AED" opacity="0.4"/>
+  <rect x="140" y="180" width="120" height="8" rx="4" fill="#E5E5E5"/>
+  <rect x="140" y="220" width="160" height="60" rx="8" fill="#EDE9FE"/>
+  <rect x="140" y="300" width="160" height="60" rx="8" fill="#EDE9FE"/>
+  <rect x="140" y="380" width="160" height="60" rx="8" fill="#EDE9FE"/>
+  <rect x="360" y="150" width="320" height="280" rx="16" fill="#EDE9FE"/>
+  <text x="400" y="560" text-anchor="middle" fill="#737373" font-family="system-ui" font-size="14">Campus Connect</text>
+</svg>

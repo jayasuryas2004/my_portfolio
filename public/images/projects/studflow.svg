@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <rect width="800" height="600" fill="#EFF6FF"/>
+  <rect x="60" y="60" width="320" height="480" rx="24" fill="#2563EB" opacity="0.15"/>
+  <rect x="100" y="100" width="240" height="400" rx="16" fill="white"/>
+  <rect x="120" y="130" width="200" height="12" rx="6" fill="#2563EB" opacity="0.3"/>
+  <rect x="120" y="160" width="160" height="8" rx="4" fill="#E5E5E5"/>
+  <rect x="120" y="200" width="200" height="80" rx="12" fill="#DBEAFE"/>
+  <rect x="120" y="300" width="200" height="80" rx="12" fill="#DBEAFE"/>
+  <rect x="440" y="120" width="280" height="360" rx="20" fill="white" stroke="#E5E5E5"/>
+  <rect x="480" y="160" width="200" height="10" rx="5" fill="#2563EB" opacity="0.4"/>
+  <rect x="480" y="190" width="160" height="8" rx="4" fill="#E5E5E5"/>
+  <rect x="480" y="230" width="200" height="120" rx="12" fill="#DBEAFE"/>
+  <text x="400" y="560" text-anchor="middle" fill="#737373" font-family="system-ui" font-size="14">StudFlow</text>
+</svg>

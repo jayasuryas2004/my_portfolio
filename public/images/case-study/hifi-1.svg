@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <rect width="800" height="600" fill="#EFF6FF"/>
+  <rect x="80" y="80" width="640" height="440" rx="24" fill="white" stroke="#BFDBFE"/>
+  <rect x="120" y="120" width="240" height="360" rx="16" fill="#2563EB" opacity="0.08"/>
+  <rect x="140" y="150" width="200" height="14" rx="7" fill="#2563EB" opacity="0.3"/>
+  <rect x="140" y="180" width="160" height="8" rx="4" fill="#E5E5E5"/>
+  <rect x="140" y="220" width="200" height="100" rx="12" fill="#DBEAFE"/>
+  <rect x="140" y="340" width="200" height="100" rx="12" fill="#DBEAFE"/>
+  <rect x="400" y="150" width="280" height="300" rx="16" fill="#DBEAFE"/>
+  <text x="400" y="560" text-anchor="middle" fill="#737373" font-family="system-ui" font-size="12">High Fidelity</text>
+</svg>

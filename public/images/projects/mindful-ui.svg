@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <rect width="800" height="600" fill="#ECFDF5"/>
+  <rect x="100" y="100" width="600" height="400" rx="24" fill="white" stroke="#E5E5E5"/>
+  <circle cx="250" cy="250" r="60" fill="#059669" opacity="0.15"/>
+  <rect x="350" y="200" width="280" height="12" rx="6" fill="#059669" opacity="0.3"/>
+  <rect x="350" y="230" width="200" height="8" rx="4" fill="#E5E5E5"/>
+  <rect x="350" y="260" width="240" height="8" rx="4" fill="#E5E5E5"/>
+  <rect x="200" y="350" width="120" height="40" rx="20" fill="#059669" opacity="0.2"/>
+  <rect x="340" y="350" width="120" height="40" rx="20" fill="#D1FAE5"/>
+  <rect x="480" y="350" width="120" height="40" rx="20" fill="#D1FAE5"/>
+  <text x="400" y="560" text-anchor="middle" fill="#737373" font-family="system-ui" font-size="14">Mindful UI Kit</text>
+</svg>

@@ -1,36 +1,86 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# [YOUR NAME] — UI/UX Designer Portfolio
+
+A production-ready personal portfolio for a 4th-year B.E. Computer Science Engineering student specializing in UI/UX design. Built with a minimal, editorial aesthetic inspired by premium design portfolios — monochrome palette, large typography, glass navigation, and refined motion.
+
+## Tech Stack
+
+- **Framework:** Next.js 15 (App Router)
+- **UI:** React 19, TypeScript, Tailwind CSS v4
+- **Animation:** Framer Motion, Lenis smooth scroll
+- **Components:** shadcn/ui (Radix primitives)
+- **Icons:** Lucide React + custom social icons
+
+## Features
+
+- **Home** — Hero with background typography, featured work, skills, services accordion, experience timeline, CTA
+- **Portfolio** — Filterable project grid with magnetic hover, image zoom, gradient overlays
+- **Case Studies** — Full UX process documentation (research, personas, journey maps, wireframes, design system, etc.)
+- **About** — Story, education, design philosophy, workflow, toolbox, goals, printable resume
+- **Contact** — Accessible form with email and social links
+- **SEO** — Per-page metadata, sitemap, robots.txt
+- **A11y** — Semantic HTML, skip link, ARIA labels, keyboard navigation, reduced motion support
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Production build
+npm run build
+
+# Start production server
+npm start
+
+# Lint
+npm run lint
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+src/
+├── app/                    # Next.js App Router pages
+│   ├── page.tsx            # Home
+│   ├── portfolio/          # Portfolio grid + [slug] case studies
+│   ├── about/
+│   ├── contact/
+│   ├── resume/             # Print-friendly resume
+│   ├── sitemap.ts
+│   └── robots.ts
+├── components/
+│   ├── layout/             # Navbar, footer, smooth scroll, page transitions
+│   ├── sections/           # Page-specific sections
+│   ├── shared/             # Reusable UI (ProjectCard, AnimatedReveal, etc.)
+│   └── ui/                 # shadcn/ui primitives
+├── data/                   # Content (projects, skills, services, experience)
+├── hooks/                  # useReducedMotion, useMagnetic, useScrollSection
+├── lib/                    # Utils, constants, animation variants
+└── types/                  # TypeScript interfaces
+public/
+└── images/                 # SVG placeholders for projects & case studies
+```
 
-## Learn More
+## Customization
 
-To learn more about Next.js, take a look at the following resources:
+1. **Profile** — Edit `src/lib/constants.ts` (`SITE`, `SOCIAL_LINKS`)
+2. **Projects** — Update `src/data/projects.ts` with your case studies
+3. **Experience & Skills** — Edit `src/data/experience.ts` and `src/data/skills.ts`
+4. **Resume** — Update `src/app/resume/page.tsx` or replace with a PDF in `/public`
+5. **Domain** — Update URLs in `src/app/sitemap.ts` and `src/app/robots.ts`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Performance Notes
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Images use Next.js `Image` with lazy loading (except above-the-fold)
+- Fonts loaded via `next/font` with `display: swap`
+- Static generation for all case study routes
+- Target: 90+ Lighthouse score (run audit after adding real images)
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Private portfolio project. All rights reserved.

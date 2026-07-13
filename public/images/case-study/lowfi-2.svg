@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <rect width="800" height="600" fill="#FAFAFA"/>
+  <rect x="240" y="60" width="320" height="480" rx="32" fill="white" stroke="#E5E5E5"/>
+  <rect x="280" y="100" width="240" height="16" rx="8" fill="#D4D4D4"/>
+  <rect x="280" y="140" width="240" height="160" rx="16" fill="#E5E5E5"/>
+  <rect x="280" y="320" width="110" height="80" rx="12" fill="#E5E5E5"/>
+  <rect x="410" y="320" width="110" height="80" rx="12" fill="#E5E5E5"/>
+  <text x="400" y="570" text-anchor="middle" fill="#A3A3A3" font-family="system-ui" font-size="12">Low Fidelity  Mobile</text>
+</svg>
