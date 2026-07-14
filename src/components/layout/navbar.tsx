@@ -72,7 +72,7 @@ export function Navbar() {
                   const labelMap: Record<string, string> = {
                     work: "Work (4)",
                     services: "Service (4)",
-                    experience: "Experience (1Y+)",
+                    experience: "Experience",
                   };
                   return (
                     <button

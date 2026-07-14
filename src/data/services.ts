@@ -12,7 +12,7 @@ export const services: Service[] = [
       "Design systems & component libraries",
       "Usability testing & iteration",
     ],
-    image: "/images/services/ui-ux.svg",
+    image: "/images/services/millionminds.png",
   },
   {
     id: "web-design",
@@ -25,7 +25,7 @@ export const services: Service[] = [
       "Responsive design systems",
       "Next.js implementation",
     ],
-    image: "/images/services/web-design.svg",
+    image: "/images/services/wedease.png",
   },
   {
     id: "branding",
@@ -38,7 +38,7 @@ export const services: Service[] = [
       "Brand guidelines",
       "Social media templates",
     ],
-    image: "/images/services/branding.svg",
+    image: "/images/services/schemeplus.png",
   },
   {
     id: "motion",
@@ -51,6 +51,6 @@ export const services: Service[] = [
       "Prototype motion specs",
       "Reduced-motion fallbacks",
     ],
-    image: "/images/services/motion.svg",
+    image: "/images/services/harsath.png",
   },
 ];

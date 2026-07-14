@@ -26,22 +26,8 @@ const baseCaseStudy = {
   ],
   personas: [
     {
-      name: "Priya",
-      role: "3rd Year CSE Student",
-      goals: [
-        "Track assignments across 6 courses without missing deadlines",
-        "Study in focused 45-minute blocks between classes",
-        "Collaborate on group projects with clear ownership",
-      ],
-      frustrations: [
-        "Too many disconnected apps for notes, tasks, and schedules",
-        "Notification fatigue from generic reminder systems",
-        "Hard to visualize weekly workload at a glance",
-      ],
-    },
-    {
-      name: "Arjun",
-      role: "Final Year Design Student",
+      name: "Siren UI/UX",
+      role: "UI/UX Designer",
       goals: [
         "Balance portfolio work with academic deadlines",
         "Maintain creative momentum during exam seasons",
@@ -88,9 +74,9 @@ const baseCaseStudy = {
     "Insights — Weekly patterns, completion rates, streak tracking",
     "Profile — Preferences, notification settings, integrations",
   ],
-  wireframes: ["/images/case-study/wireframe-1.svg", "/images/case-study/wireframe-2.svg"],
-  lowFidelity: ["/images/case-study/lowfi-1.svg", "/images/case-study/lowfi-2.svg"],
-  highFidelity: ["/images/case-study/hifi-1.svg", "/images/case-study/hifi-2.svg"],
+  wireframes: ["/images/services/harsath.png", "/images/services/i3.png"],
+  lowFidelity: ["/images/services/millionminds.png", "/images/services/i4.png"],
+  highFidelity: ["/images/services/wedease.png", "/images/services/i7.png"],
   designSystem: {
     colors: [
       { name: "Ink", value: "#0A0A0A" },

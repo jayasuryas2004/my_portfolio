@@ -26,6 +26,5 @@ export const HOME_SECTIONS = [
 ] as const;
 
 export const SOCIAL_LINKS = [
-  { name: "Instagram", href: "https://instagram.com", icon: "instagram" as const },
   { name: "LinkedIn", href: "https://www.linkedin.com/in/jayasurya-subramanian/", icon: "linkedin" as const },
 ] as const;

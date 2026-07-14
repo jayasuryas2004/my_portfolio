@@ -24,15 +24,9 @@ export const skillCategories = [
 
 export const toolbox = [
   "Figma",
-  "FigJam",
-  "Adobe Illustrator",
-  "Adobe Photoshop",
-  "Framer",
-  "Principle",
   "VS Code",
   "Next.js",
   "Tailwind CSS",
   "Notion",
-  "Maze",
   "Miro",
 ];
